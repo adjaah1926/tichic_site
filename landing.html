@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TICHIC - Inscription</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">TICHIC</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="collection.html">Collection</a>
+      <a href="savoir-faire.html">Savoir-faire</a>
+      <a href="matieres.html">Matières</a>
+      <a href="landing.html" class="active">S'inscrire</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO INSCRIPTION -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Recevez notre <span class="accent">catalogue</span> exclusif</h2>
+      <p>Inscrivez-vous pour découvrir nos nouvelles collections en avant-première et bénéficier d'offres spéciales réservées à nos abonnés.</p>
+      <a href="#formulaire-inscription" class="btn-primary">S'inscrire maintenant</a>
+    </div>
+  </section>
+
+  <!-- SECTION UNIQUE LANDING (fusionnée) -->
+  <section class="landing">
+    <h2>💡 Recevoir notre catalogue</h2>
+    <p class="section-subtitle">Inscrivez-vous pour recevoir notre catalogue complet</p>
+
+    <div class="form-container">
+      <form id="formulaire-inscription">
+        <div class="form-group">
+          <label>Nom complet</label>
+          <input type="text" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label>Adresse email</label>
+          <input type="email" placeholder="votre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Taille préférée</label>
+          <select>
+            <option>S - 36/38</option>
+            <option>M - 40/42</option>
+            <option>L - 44/46</option>
+            <option>XL - 48/50</option>
+            <option>XXL - 52/54</option>
+          </select>
+        </div>
+        <button type="submit">S'inscrire</button>
+      </form>
+      <div id="message-inscription" class="feedback-message"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h4>TICHIC</h4>
+        <p>Habits traditionnels pour hommes<br>Depuis 1985</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="collection.html">Collection</a>
+        <a href="savoir-faire.html">Savoir-faire</a>
+        <a href="matieres.html">Matières</a>
+        <a href="landing.html">S'inscrire</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 TICHIC — Tradition & Élégance</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

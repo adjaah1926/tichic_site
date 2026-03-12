@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TICHIC - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">TICHIC</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="collection.html">Collection</a>
+      <a href="savoir-faire.html">Savoir-faire</a>
+      <a href="matieres.html">Matières</a>
+      <a href="landing.html">S'inscrire</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO CONTACT -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Contactez-<span class="accent">nous</span></h2>
+      <p>Une question ? Une demande de devis ? Un rendez-vous en showroom ? Notre équipe est à votre écoute pour vous accompagner dans votre projet.</p>
+      <a href="#formulaire-contact" class="btn-primary">Envoyer un message</a>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact">  <!-- Changé: "Contact" → "contact" (minuscule) -->
+    <h2>📬 Contactez-nous</h2>
+    <p class="section-subtitle">Pour toute demande d'information ou de devis</p>
+
+    <div class="form-container">
+      <form id="formulaire-contact">
+        <div class="form-group">
+          <label>Nom complet</label>
+          <input type="text" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div id="message-contact" class="feedback-message"></div>
+    </div>
+  </section>  <!-- FIN de la section contact -->
+
+  <footer id="main-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h4>TICHIC</h4>
+        <p>Habits traditionnels pour hommes<br>Depuis 1985</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="collection.html">Collection</a>
+        <a href="savoir-faire.html">Savoir-faire</a>
+        <a href="matieres.html">Matières</a>
+        <a href="landing.html">S'inscrire</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 TICHIC — Tradition & Élégance</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
