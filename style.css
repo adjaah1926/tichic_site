@@ -574,16 +574,16 @@ footer {
   }
 }
 .story-section {
-  overflow: hidden; /* Tout ce qui dépasse sera caché */
+  overflow: hidden;
 }
 
 .story-image-container {
-  position: relative; /* Meilleur contrôle */
+  position: relative; 
 }
 /* ===== VIDÉOS CÔTE À CÔTE ===== */
 .videos-side-by-side {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 colonnes */
+  grid-template-columns: 1fr 1fr; 
   gap: 2rem;
   margin: 2rem 0;
   max-width: 1000px;
@@ -832,7 +832,7 @@ footer {
 /* ===== PAGE MATIÈRES ===== */
 .matieres-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem;
   margin: 3rem 0;
 }
@@ -880,13 +880,13 @@ footer {
 /* Responsive pour matieres-grid */
 @media (max-width: 900px) {
   .matieres-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 600px) {
   .matieres-grid {
-    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    grid-template-columns: 1fr; 
   }
   
   .matiere-card img {

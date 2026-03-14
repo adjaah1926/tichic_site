@@ -1,12 +1,16 @@
 // Attendre que le DOM soit chargé
 document.addEventListener('DOMContentLoaded', function() {
-  
+
   // === GESTION DES FORMULAIRES ===
-  const formInscription = document.getElementById('formulaire-inscription');
-  const msgInscription = document.getElementById('message-inscription');
+  const formDevis = document.getElementById('formulaire-devis');
+  const msgDevis = document.getElementById('message-devis');
   const formContact = document.getElementById('formulaire-contact');
   const msgContact = document.getElementById('message-contact');
 
+  // Formulaire inscription (assurez-vous d'ajouter le bon id pour formInscription dans le HTML si nécessaire)
+  const formInscription = document.getElementById('formulaire-inscription');
+  const msgInscription = document.getElementById('message-inscription');
+  
   if (formInscription) {
     formInscription.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -19,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Formulaire de contact
   if (formContact) {
     formContact.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -27,6 +32,19 @@ document.addEventListener('DOMContentLoaded', function() {
       formContact.reset();
       setTimeout(() => {
         msgContact.style.display = 'none';
+      }, 6000);
+    });
+  }
+
+  // Formulaire de devis (si nécessaire, assure-toi que le formulaire existe dans ton HTML)
+  if (formDevis) {
+    formDevis.addEventListener('submit', function(e) {
+      e.preventDefault();
+      msgDevis.style.display = 'block';
+      msgDevis.textContent = 'Votre demande de devis a bien été envoyée.';
+      formDevis.reset();
+      setTimeout(() => {
+        msgDevis.style.display = 'none';
       }, 6000);
     });
   }
